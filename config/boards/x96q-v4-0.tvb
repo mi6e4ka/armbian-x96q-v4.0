@@ -1,0 +1,14 @@
+# Allwinner H313 TVBox with 1GB of RAM and 8GB EMMC
+BOARD_NAME="X96Q v4.0 TV Box"
+BOARDFAMILY="sun50iw9"
+BOARD_MAINTAINER="mi6e4ka"
+BOOTCONFIG="x96_q_ddr3_defconfig"
+BOOT_LOGO="desktop"
+KERNEL_TARGET="current,edge"
+KERNEL_TEST_TARGET="current"
+FORCE_BOOTSCRIPT_UPDATE="yes"
+OVERLAY_PREFIX="sun50i-h616"
+enable_extension "uwe5622-allwinner"
+# mainline u-boot
+BOOTBRANCH="tag:v2026.04"
+BOOTPATCHDIR="v2026.04/board_x96q-ddr3-v4.0"
